@@ -25,7 +25,7 @@ document.getElementById("google-login").addEventListener("click", () => {
                  // Redirect to control panel if role exists (with slight delay)
                     setTimeout(() => {
                     window.location.href = "control-panel.html";
-                    }, 500); // 0.5-second delay to prevent login page flashing
+                    }, 1500); // 1.5-second delay to prevent login page flashing
                     
                     // Redirect to control panel if role exists
                     //window.location.href = "control-panel.html";
