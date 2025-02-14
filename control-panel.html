@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control Panel</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            text-align: center;  /* Centers everything */
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px; /* Adds space between heading and buttons */
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Ensures buttons appear one below the other */
+            align-items: center; /* Centers buttons horizontally */
+        }
+        button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     
+ <h1>Welcome to the Control Panel</h1>
 
-   <h1>Welcome to the Control Panel</h1>
-
-<button id="user-panel-btn" style="display: none;" onclick="window.location.href='user-panel.html'">User Panel</button>
-<button id="admin-panel-btn" style="display: none;" onclick="window.location.href='admin-panel.html'">Admin Panel</button>
-<button id="logout">Logout</button>
-
-<style>
-    button {
-        display: block;  /* Makes each button appear on a new line */
-        margin: 10px 0;  /* Adds spacing between buttons */
-        padding: 10px;
-        width: 200px;  /* Sets a fixed width for consistency */
-        font-size: 16px;
-    }
-</style>
+    <div class="button-container">
+        <button id="user-panel-btn" style="display: none;" onclick="window.location.href='user-panel.html'">User Panel</button>
+        <button id="admin-panel-btn" style="display: none;" onclick="window.location.href='admin-panel.html'">Admin Panel</button>
+        <button id="logout">Logout</button>
+    </div>
 
 
     <!-- ✅ Firebase SDK Scripts (MUST come before firebase-config.js) -->
